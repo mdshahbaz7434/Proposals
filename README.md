@@ -1,4 +1,8 @@
-
+>>>>>>> 8bf41adf2cb18b0e0bbfa7cfbf8285bf39e76027
+# Proposals
+# Proposals
+=======
+>>>>>>> 8bf41adf2cb18b0e0bbfa7cfbf8285bf39e76027
 # Proposals
 
 Professional proposals for retail analytics & AI implementation services
@@ -60,4 +64,9 @@ This is a static HTML document that can be:
 
 ## License
 
+
+>>>>>>> 8bf41adf2cb18b0e0bbfa7cfbf8285bf39e76027
 This project is for business proposal purposes.
+=======
+
+>>>>>>> 8bf41adf2cb18b0e0bbfa7cfbf8285bf39e76027
