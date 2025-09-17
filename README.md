@@ -1,7 +1,4 @@
 # Proposals
-Professional proposal for retail analytics &amp; AI implementation service
->>>>>>> a7a91d2f923f0805b2c593ddcfb7b0bd1474f279
-# Proposals
 
 Professional proposals for retail analytics & AI implementation services
 
@@ -59,7 +56,4 @@ This is a static HTML document that can be:
 ## License
 
 This project is for business proposal purposes.
-=======
-# Proposals
-Professional proposal for retail analytics &amp; AI implementation service
->>>>>>> a7a91d2f923f0805b2c593ddcfb7b0bd1474f279
+
