@@ -249,6 +249,53 @@
             background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
             border-radius: 3px;
         }
+
+
+        /* Navigation Menu */
+        .nav-menu {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            z-index: 1000;
+            max-width: 250px;
+        }
+        
+        .nav-menu h4 {
+            color: #1e40af;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        
+        .nav-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .nav-menu li {
+            margin: 5px 0;
+        }
+        
+        .nav-menu a {
+            color: #6b7280;
+            text-decoration: none;
+            font-size: 0.8em;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-menu a:hover {
+            color: #3b82f6;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+        }
         
         .section h3 {
             font-size: 1.5em;
@@ -1228,51 +1275,7 @@
             }
         }
         
-        /* Navigation Menu */
-        .nav-menu {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 15px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-            z-index: 1000;
-            max-width: 250px;
-        }
-        
-        .nav-menu h4 {
-            color: #1e40af;
-            margin-bottom: 10px;
-            font-size: 0.9em;
-        }
-        
-        .nav-menu ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .nav-menu li {
-            margin: 5px 0;
-        }
-        
-        .nav-menu a {
-            color: #6b7280;
-            text-decoration: none;
-            font-size: 0.8em;
-            transition: color 0.3s ease;
-        }
-        
-        .nav-menu a:hover {
-            color: #3b82f6;
-        }
-        
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-            }
-        }
+
     </style>
 </head>
 <body>
@@ -1282,11 +1285,15 @@
         <ul>
             <li><a href="#executive-summary">🎯 Executive Summary</a></li>
             <li><a href="#pain-points">😨 Pain Points</a></li>
-            <li><a href="#architecture">🏗️ Architecture</a></li>
-            <li><a href="#special-offer">🎉 Special Offer</a></li>
+            <li><a href="#architecture">🏗️ Solution Architecture</a></li>
+            <li><a href="#recommended-solution">🏆 Our Recommended Solution</a></li>
+            <li><a href="#investment-structure">💰 Investment Structure</a></li>
+            <li><a href="#special-offer">🎉 Special Discount Offer</a></li>
+            <li><a href="#contract-terms">📋 Contract Terms</a></li>
             <li><a href="#why-choose-us">🏆 Why Choose Us</a></li>
-            <li><a href="#timeline">🪜 What's Next</a></li>
-            <li><a href="#outcomes">📊 Expected Outcomes</a></li>
+            <li><a href="#timeline">📅 Implementation Timeline</a></li>
+            <li><a href="#outcomes">🎯 Expected Outcomes</a></li>
+            <li><a href="#what-next">🪜 What's Next</a></li>
             <li><a href="#contact">🤝 Contact</a></li>
         </ul>
     </div>
@@ -1306,7 +1313,7 @@
                             <strong>Valid Until:</strong> October 16, 2025
                         </div>
                         <div class="proposal-center-logo">
-                            <img src="logo.png" alt="Company Logo" />
+                            <img src="logo.png?v=2025092101" alt="Company Logo" />
                         </div>
                         <div style="text-align: right; padding-right: 10px;">
                             <strong>Prepared By:</strong> Shehbaz Muneer<br>
@@ -1315,7 +1322,7 @@
                         </div>
                     </div>
                     <div style="text-align: center; margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.3);">
-                        <strong style="font-size: 1.1em;">Solution Provider: hellisyntech.com</strong>
+                        <strong style="font-size: 1.1em;">Solution Provider: godai.tech</strong>
                     </div>
                 </div>
             </div>
@@ -1332,8 +1339,9 @@
                 </div>
             </div>
             
-            <div class="pain-points" id="pain-points">
-                <h3>🎯 Your Current Pain Points We'll Solve</h3>
+            <div class="section" id="pain-points">
+                <h2>🎯 Pain Points: Current Challenges We'll Solve</h2>
+                <div class="pain-points">
                 <div class="pain-grid">
                     <div class="pain-item">
                         <h4>Data Silos</h4>
@@ -1360,167 +1368,14 @@
                         <p>Inability to benchmark store performance and identify improvement opportunities</p>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
 
         <!-- Architecture Solutions Page -->
         <div class="page">
             <div class="section" id="architecture">
-                <h2>🏗️ Architecture Solutions Comparison</h2>
-                <div class="architecture-options">
-                    <!-- On-Premise Solution -->
-                    <div class="arch-card">
-                        <div class="arch-title">🏢 On-Premise Solution</div>
-                        
-                        <div class="architecture-diagram">
-                            <h4 style="color: #1e40af; margin-bottom: 15px; text-align: center;">📊 Logical Data Architecture Flow</h4>
-                            
-                            <!-- High-Level Data Flow -->
-                            <div class="flow-container">
-                                <div class="flow-component">10 POS</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-component">SFTP</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-component">Airflow</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-component">MinIO</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-component">Spark</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-component">PostgreSQL</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-component">ML Models</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-component">Grafana</div>
-                            </div>
-                            
-                            <!-- Detailed Process Flow -->
-                            <h4 style="color: #1e40af; margin: 20px 0 15px; text-align: center;">🔄 Data Journey Process</h4>
-                            <div class="detailed-process-flow">
-                                <div class="process-step">
-                                    <div class="step-number">1</div>
-                                    <div class="step-title">Data Ingestion</div>
-                                    <div class="step-description">POS systems upload sales data via SFTP hourly. Eliminates manual CSV uploads.</div>
-                                </div>
-                                <div class="process-step">
-                                    <div class="step-number">2</div>
-                                    <div class="step-title">Orchestration</div>
-                                    <div class="step-description">Airflow monitors files and triggers ETL pipelines automatically.</div>
-                                </div>
-                                <div class="process-step">
-                                    <div class="step-number">3</div>
-                                    <div class="step-title">Data Storage</div>
-                                    <div class="step-description">MinIO stores raw files with versioning and backup capabilities.</div>
-                                </div>
-                                <div class="process-step">
-                                    <div class="step-number">4</div>
-                                    <div class="step-title">Processing</div>
-                                    <div class="step-description">Spark cleans and standardizes data from all 10 systems.</div>
-                                </div>
-                                <div class="process-step">
-                                    <div class="step-number">5</div>
-                                    <div class="step-title">Analytics DB</div>
-                                    <div class="step-description">PostgreSQL stores processed data for fast queries.</div>
-                                </div>
-                                <div class="process-step">
-                                    <div class="step-number">6</div>
-                                    <div class="step-title">AI/ML Pipeline</div>
-                                    <div class="step-description">Python models detect theft and predict demand patterns.</div>
-                                </div>
-                                <div class="process-step">
-                                    <div class="step-number">7</div>
-                                    <div class="step-title">Insights</div>
-                                    <div class="step-description">Grafana provides 24/7 monitoring with automated alerts.</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Pain Point Solutions -->
-                            <h4 style="color: #1e40af; margin: 20px 0 15px; text-align: center;">🎯 Pain Point Solutions</h4>
-                            <div class="pain-solution-mapping">
-                                <div class="pain-solution-item">
-                                    <div class="pain-solution-content">
-                                        <div class="pain-title">🔗 Eliminates Data Silos</div>
-                                        <div class="solution-text">Unified data lake consolidates all 10 POS systems with standardized schema</div>
-                                    </div>
-                                </div>
-                                <div class="pain-solution-item">
-                                    <div class="pain-solution-content">
-                                        <div class="pain-title">⚡ Automates Processes</div>
-                                        <div class="solution-text">Airflow eliminates manual CSV uploads, saving 20+ hours weekly</div>
-                                    </div>
-                                </div>
-                                <div class="pain-solution-item">
-                                    <div class="pain-solution-content">
-                                        <div class="pain-title">🚨 Detects Theft</div>
-                                        <div class="solution-text">ML algorithms identify suspicious transactions in real-time</div>
-                                    </div>
-                                </div>
-                                <div class="pain-solution-item">
-                                    <div class="pain-solution-content">
-                                        <div class="pain-title">📈 Improves Forecasting</div>
-                                        <div class="solution-text">Predictive models prevent stockouts with 90% accuracy</div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Technology Stack -->
-                            <h4 style="color: #1e40af; margin: 20px 0 10px; text-align: center;">🛠️ Technology Stack</h4>
-                            <div class="tech-stack-grid">
-                                <div class="tech-item">Apache Airflow<br><small>Orchestration</small></div>
-                                <div class="tech-item">MinIO<br><small>Storage</small></div>
-                                <div class="tech-item">Apache Spark<br><small>Processing</small></div>
-                                <div class="tech-item">PostgreSQL<br><small>Database</small></div>
-                                <div class="tech-item">Python/Pandas<br><small>ML & Analytics</small></div>
-                                <div class="tech-item">Grafana<br><small>Visualization</small></div>
-                                <div class="tech-item">Docker<br><small>Containers</small></div>
-                                <div class="tech-item">SFTP Server<br><small>File Transfer</small></div>
-                            </div>
-                        </div>
-                        
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
-                            <div style="background: rgba(16, 185, 129, 0.05); padding: 20px; border-radius: 10px; border-left: 4px solid #10b981;">
-                                <h4 style="color: #10b981; margin-bottom: 10px;">✅ Advantages</h4>
-                                <ul style="list-style: none; padding: 0;">
-                                    <li>✅ Complete data control and privacy</li>
-                                    <li>✅ No recurring cloud subscription costs</li>
-                                    <li>✅ High security within your premises</li>
-                                    <li>✅ Fully customizable infrastructure</li>
-                                    <li>✅ No internet dependency for operations</li>
-                                </ul>
-                            </div>
-                            <div style="background: rgba(220, 38, 38, 0.05); padding: 20px; border-radius: 10px; border-left: 4px solid #dc2626;">
-                                <h4 style="color: #dc2626; margin-bottom: 10px;">❌ Considerations</h4>
-                                <ul style="list-style: none; padding: 0;">
-                                    <li>❌ High upfront hardware investment</li>
-                                    <li>❌ IT maintenance and support overhead</li>
-                                    <li>❌ Limited scalability without new hardware</li>
-                                    <li>❌ Complex disaster recovery setup</li>
-                                    <li>❌ Requires dedicated IT expertise</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="cost-info">
-                            <strong>Estimated Infrastructure Investment:</strong><br>
-                            • High-performance Server: ~$8,000<br>
-                            • Storage Array (10TB): ~$4,000<br>
-                            • Network Equipment: ~$2,000<br>
-                            • Software Licenses: ~$3,000<br>
-                            <strong>Total Estimated Cost: ~$17,000</strong><br>
-                            <em>Plus ongoing maintenance and electricity costs</em>
-                            
-                            <div class="cost-disclaimer" style="margin-top: 15px;">
-                                ⚠️ <strong>*Costs are estimated and may vary region to region. We provide implementation services only.</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Cloud Solution Page -->
-        <div class="page">
-            <div class="section">
+                <h2>🏗️ Solution Architecture</h2>
                 <div class="architecture-options">
                     <!-- Cloud Solution -->
                     <div class="arch-card recommended">
@@ -1528,7 +1383,7 @@
                         <div class="arch-title">☁️ Cloud Solution (AWS)</div>
                         
                         <div class="architecture-diagram">
-                            <h4 style="color: #059669; margin-bottom: 15px; text-align: center;">🚀 AWS Cloud Architecture Flow</h4>
+                            <h4 style="color: #059669; margin-bottom: 15px;">🚀 AWS Cloud Architecture Flow</h4>
                             
                             <!-- High-Level Data Flow -->
                             <div class="flow-container">
@@ -1552,7 +1407,7 @@
                             </div>
                             
                             <!-- Detailed Process Flow -->
-                            <h4 style="color: #059669; margin: 20px 0 15px; text-align: center;">🔄 AWS Data Journey</h4>
+                            <h4 style="color: #059669; margin: 20px 0 15px;">🔄 AWS Data Journey</h4>
                             <div class="detailed-process-flow">
                                 <div class="process-step cloud-step">
                                     <div class="step-number">1</div>
@@ -1602,7 +1457,7 @@
                             </div>
                             
                             <!-- Pain Point Solutions -->
-                            <h4 style="color: #059669; margin: 20px 0 15px; text-align: center;">🎯 AWS Pain Point Solutions</h4>
+                            <h4 style="color: #059669; margin: 20px 0 15px;">🎯 AWS Pain Point Solutions</h4>
                             <div class="pain-solution-mapping">
                                 <div class="pain-solution-item">
                                     <div class="pain-solution-content">
@@ -1631,7 +1486,7 @@
                             </div>
                             
                             <!-- AWS Technology Stack -->
-                            <h4 style="color: #059669; margin: 20px 0 10px; text-align: center;">☁️ AWS Services</h4>
+                            <h4 style="color: #059669; margin: 20px 0 10px;">☁️ AWS Services</h4>
                             <div class="tech-stack-grid">
                                 <div class="tech-item">Amazon S3<br><small>Data Lake</small></div>
                                 <div class="tech-item">AWS Lambda<br><small>Serverless</small></div>
@@ -1670,169 +1525,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
-                        <div class="cost-info" style="background: #e8f5e8; border: 2px solid #10b981;">
-                            <strong>Estimated Monthly Operational Costs:</strong><br>
-                            • S3 Storage (1TB): ~$50/month<br>
-                            • RDS PostgreSQL: ~$80/month<br>
-                            • Lambda Functions: ~$30/month<br>
-                            • ECS for Airflow: ~$60/month<br>
-                            <strong>Total Estimated: ~$220/month</strong><br>
-                            <em>Scales automatically with business growth</em>
-                            
-                            <div class="cost-disclaimer" style="margin-top: 15px;">
-                                ⚠️ <strong>*Costs are estimated and may vary region to region. We provide implementation services only.</strong>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Hybrid Solution -->
-                    <div class="arch-card">
-                        <div class="arch-title">🔄 Hybrid Solution</div>
-                        
-                        <div class="architecture-diagram">
-                            <h4 style="color: #d97706; margin-bottom: 15px; text-align: center;">⚖️ Hybrid Architecture Flow</h4>
-                            
-                            <!-- High-Level Data Flow -->
-                            <div class="flow-container">
-                                <div class="flow-component hybrid-component">10 POS</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-component hybrid-component">Edge Gateway</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-component hybrid-component">Local Airflow</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-component hybrid-component">Local Process</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-component hybrid-component">Sync Gateway</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-component hybrid-component">Cloud Storage</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-component hybrid-component">Advanced ML</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-component hybrid-component">Unified Dashboard</div>
-                            </div>
-                            
-                            <!-- Detailed Process Flow -->
-                            <h4 style="color: #d97706; margin: 20px 0 15px; text-align: center;">🔄 Hybrid Data Journey</h4>
-                            <div class="detailed-process-flow">
-                                <div class="process-step hybrid-step">
-                                    <div class="step-number">1</div>
-                                    <div class="step-title">Local Collection</div>
-                                    <div class="step-description">Edge gateway collects POS data locally.</div>
-                                </div>
-                                <div class="process-step hybrid-step">
-                                    <div class="step-number">2</div>
-                                    <div class="step-title">Edge Processing</div>
-                                    <div class="step-description">Local Airflow handles real-time analytics.</div>
-                                </div>
-                                <div class="process-step hybrid-step">
-                                    <div class="step-number">3</div>
-                                    <div class="step-title">Local Analytics</div>
-                                    <div class="step-description">Basic fraud detection processed locally.</div>
-                                </div>
-                                <div class="process-step hybrid-step">
-                                    <div class="step-number">4</div>
-                                    <div class="step-title">Intelligent Sync</div>
-                                    <div class="step-description">Sync gateway replicates data to cloud.</div>
-                                </div>
-                                <div class="process-step hybrid-step">
-                                    <div class="step-number">5</div>
-                                    <div class="step-title">Cloud Data Lake</div>
-                                    <div class="step-description">Historical data stored in cloud.</div>
-                                </div>
-                                <div class="process-step hybrid-step">
-                                    <div class="step-number">6</div>
-                                    <div class="step-title">Advanced ML</div>
-                                    <div class="step-description">Complex ML models run in cloud.</div>
-                                </div>
-                                <div class="process-step hybrid-step">
-                                    <div class="step-number">7</div>
-                                    <div class="step-title">Unified Insights</div>
-                                    <div class="step-description">Combined local and cloud insights.</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Pain Point Solutions -->
-                            <h4 style="color: #d97706; margin: 20px 0 15px; text-align: center;">🎯 Hybrid Pain Point Solutions</h4>
-                            <div class="pain-solution-mapping">
-                                <div class="pain-solution-item">
-                                    <div class="pain-solution-content">
-                                        <div class="pain-title">🔄 Best of Both Worlds</div>
-                                        <div class="solution-text">Local processing + cloud power for analytics</div>
-                                    </div>
-                                </div>
-                                <div class="pain-solution-item">
-                                    <div class="pain-solution-content">
-                                        <div class="pain-title">⚡ Zero Downtime</div>
-                                        <div class="solution-text">Local processing continues during outages</div>
-                                    </div>
-                                </div>
-                                <div class="pain-solution-item">
-                                    <div class="pain-solution-content">
-                                        <div class="pain-title">🛡️ Data Sovereignty</div>
-                                        <div class="solution-text">Sensitive data stays local with cloud ML benefits</div>
-                                    </div>
-                                </div>
-                                <div class="pain-solution-item">
-                                    <div class="pain-solution-content">
-                                        <div class="pain-title">📈 Gradual Migration</div>
-                                        <div class="solution-text">Start local and gradually move to cloud</div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Hybrid Technology Stack -->
-                            <h4 style="color: #d97706; margin: 20px 0 10px; text-align: center;">🔄 Hybrid Technology Stack</h4>
-                            <div class="tech-stack-grid">
-                                <div class="tech-item">Edge Gateway<br><small>Local Collection</small></div>
-                                <div class="tech-item">Local Airflow<br><small>Real-time Process</small></div>
-                                <div class="tech-item">Redis Cache<br><small>Fast Access</small></div>
-                                <div class="tech-item">Local Dashboard<br><small>Real-time Monitor</small></div>
-                                <div class="tech-item">Sync Gateway<br><small>Data Replication</small></div>
-                                <div class="tech-item">VPN Tunnel<br><small>Secure Connect</small></div>
-                                <div class="tech-item">Cloud Data Lake<br><small>Historical Storage</small></div>
-                                <div class="tech-item">Cloud ML<br><small>Advanced Analytics</small></div>
-                                <div class="tech-item">Event Streaming<br><small>Real-time Sync</small></div>
-                                <div class="tech-item">Conflict Resolution<br><small>Data Consistency</small></div>
-                            </div>
-                        </div>
-                        
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
-                            <div style="background: rgba(16, 185, 129, 0.05); padding: 20px; border-radius: 10px; border-left: 4px solid #10b981;">
-                                <h4 style="color: #10b981; margin-bottom: 10px;">✅ Advantages</h4>
-                                <ul style="list-style: none; padding: 0;">
-                                    <li>✅ Data residency control options</li>
-                                    <li>✅ Offline operational capability</li>
-                                    <li>✅ Flexible scaling approach</li>
-                                    <li>✅ Best of both worlds architecture</li>
-                                    <li>✅ Gradual cloud migration path</li>
-                                </ul>
-                            </div>
-                            <div style="background: rgba(220, 38, 38, 0.05); padding: 20px; border-radius: 10px; border-left: 4px solid #dc2626;">
-                                <h4 style="color: #dc2626; margin-bottom: 10px;">❌ Considerations</h4>
-                                <ul style="list-style: none; padding: 0;">
-                                    <li>❌ Most complex architecture to manage</li>
-                                    <li>❌ Higher combined costs</li>
-                                    <li>❌ Dual maintenance overhead</li>
-                                    <li>❌ Data synchronization challenges</li>
-                                    <li>❌ Requires expertise in both environments</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="cost-info">
-                            <strong>Estimated Combined Investment:</strong><br>
-                            • On-premise Hardware: ~$12,000<br>
-                            • Cloud Services: ~$150/month<br>
-                            • Sync Infrastructure: ~$100/month<br>
-                            • Maintenance Tools: ~$50/month<br>
-                            <strong>Total Estimated: ~$12,000 + $300/month</strong><br>
-                            <em>Highest total cost but maximum flexibility</em>
-                            
-                            <div class="cost-disclaimer" style="margin-top: 15px;">
-                                ⚠️ <strong>*Costs are estimated and may vary region to region. We provide implementation services only.</strong>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -1841,23 +1534,9 @@
         <!-- Resource Plan & Investment Page -->
         <div class="page">
             <div class="section">
-                <h2>🏆 Our Recommended Solution: Cloud-First Architecture</h2>
-                
-                <div class="highlight-box">
-                    <div class="highlight-content">
-                        <h3 style="color: white; text-align: center; margin-bottom: 20px;">Why AWS Cloud Solution is Perfect for You</h3>
-                        <div class="feature-grid">
-                            <div class="feature-item">✅ <strong>Rapid Deployment:</strong> MVP in 4-6 weeks</div>
-                            <div class="feature-item">✅ <strong>Cost Effective:</strong> Predictable monthly costs</div>
-                            <div class="feature-item">✅ <strong>Auto-Scaling:</strong> Handles 10K to 30K+ transactions</div>
-                            <div class="feature-item">✅ <strong>99.9% Uptime:</strong> Enterprise-grade reliability</div>
-                            <div class="feature-item">✅ <strong>Global Access:</strong> Manage from anywhere</div>
-                            <div class="feature-item">✅ <strong>Future-Proof:</strong> Easy to add new features</div>
-                        </div>
-                    </div>
-                </div>
 
-                <h3>💰 Resource Plan & Investment Structure</h3>
+
+                <h2 id="investment-structure">💰 Investment Structure: Resource Plan & Pricing</h2>
 
                 <table class="cost-table">
                     <thead>
@@ -1871,67 +1550,161 @@
                     <tbody>
                         <tr>
                             <td><strong>Lead Data Architect</strong></td>
-                            <td>$2,500/month</td>
+                            <td>PKR 560,000/month</td>
                             <td>System Design & Architecture</td>
                             <td>Designs scalable architecture and oversees technical implementation strategy</td>
                         </tr>
                         <tr>
                             <td><strong>Data Engineer</strong></td>
-                            <td>$2,200/month</td>
+                            <td>PKR 490,000/month</td>
                             <td>Data Silos & Manual CSV Processing</td>
                             <td>Builds automated ETL pipelines to unify all 10 POS systems with zero manual intervention</td>
                         </tr>
                         <tr>
                             <td><strong>BI Developer</strong></td>
-                            <td>$1,800/month</td>
+                            <td>PKR 400,000/month</td>
                             <td>No Performance Insights & Inefficient Discounting</td>
                             <td>Creates automated reports and analytics to optimize pricing and benchmark store performance</td>
                         </tr>
                         <tr>
                             <td><strong>Data Scientist</strong></td>
-                            <td>$2,400/month</td>
+                            <td>PKR 540,000/month</td>
                             <td>Inventory Shrinkage & Poor Forecasting</td>
                             <td>Develops AI models to detect theft patterns and predict demand with 95% accuracy</td>
                         </tr>
                         <tr>
                             <td><strong>DevOps Engineer</strong></td>
-                            <td>$1,200/month</td>
+                            <td>PKR 270,000/month</td>
                             <td>System Reliability & Scalability</td>
                             <td>Ensures 99.9% uptime with auto-scaling infrastructure that grows with your business</td>
                         </tr>
                         <tr>
                             <td><strong>Project Coordinator</strong></td>
-                            <td>$1,000/month</td>
+                            <td>PKR 220,000/month</td>
                             <td>Project Management & Communication</td>
                             <td>Ensures timely delivery, stakeholder communication, and project milestone tracking</td>
                         </tr>
                         <tr>
                             <td><strong>DataOps 24/7 (2 People)</strong></td>
-                            <td>$1,400/month</td>
+                            <td>PKR 320,000/month</td>
                             <td>Implementation Oversight</td>
                             <td>Focus on Operations side of Data (ETL, Management, Governance) with timely bug and issue resolution</td>
                         </tr>
                         <tr class="total-row">
                             <td><strong>Total Monthly Investment</strong></td>
-                            <td><strong>$12,500/month</strong></td>
+                            <td><strong>PKR 2,800,000/month</strong></td>
                             <td colspan="2"><strong>Complete Solution Addressing All Your Pain Points</strong></td>
                         </tr>
                     </tbody>
                 </table>
 
-                <div class="special-discount-offer" id="special-offer">
+                <h2 id="special-offer">🎉 Special Discount Offer: Exclusive Limited-Time Pricing</h2>
+                
+                <div class="special-discount-offer">
                     <div class="special-discount-content">
-                        <h3>🎉 SPECIAL DISCOUNT OFFER</h3>
+                        <div style="margin-bottom: 15px; font-size: 1.3em; text-decoration: line-through; opacity: 0.8;">Original Price: PKR 2,800,000/month</div>
                         <h4 style="margin-bottom: 20px;">We Will Provide All Mentioned Resources For Only</h4>
-                        <div style="font-size: 4em; font-weight: 900; margin: 20px 0; color: white; text-shadow: 4px 4px 8px rgba(0,0,0,0.8), 0 0 20px rgba(255,255,255,0.3); filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.7));">$8,000 USD</div>
-                        <h4 style="font-size: 1.8em; margin-top: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">[Exclusive Taxes]</h4>
+                        <div style="font-size: 4em; font-weight: 900; margin: 20px 0; color: white; text-shadow: 4px 4px 8px rgba(0,0,0,0.8), 0 0 20px rgba(255,255,255,0.3); filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.7));">PKR 1,600,000 <span style="font-size: 0.4em; font-weight: 600; opacity: 0.9;">(Exclusive All Kind of Taxes)</span></div>
+                        <div style="margin-top: 15px; font-size: 1.4em; font-weight: 700; color: white;">That's a savings of PKR 1,200,000 per month!</div>
                         <p style="margin-top: 25px; font-size: 1.2em;">We will manage all implementations, execution and management. Our goal is to ease your current pains with our expertise.</p>
                     </div>
                 </div>
 
-                <!-- Why Choose Us Section -->
+                <!-- Enhanced Contract Terms Section -->
+                <div style="background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); color: #1e40af; padding: 40px; border-radius: 20px; margin: 40px 0; border: 3px solid #e5e7eb; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);">
+                    <!-- Section Header -->
+                    <div style="margin-bottom: 40px;">
+                        <h2 id="contract-terms">📋 Contract Terms: Professional Service Agreement</h2>
+                        <p style="color: #6b7280; font-size: 1.1em; margin-top: 10px;">Comprehensive terms for your digital transformation journey</p>
+                    </div>
+
+                    <!-- Contract Investment Overview -->
+                    <div style="background: linear-gradient(135deg, #f0f9ff 0%, #dbeafe 100%); padding: 30px; border-radius: 15px; margin-bottom: 30px; border: 2px solid #bfdbfe; text-align: center;">
+                        <h4 style="color: #1e40af; margin-bottom: 15px; font-size: 1.4em; font-weight: 700;">💰 1-Year Implementation Contract Cost</h4>
+                        <div style="font-size: 3em; font-weight: 900; margin: 20px 0; color: #1e40af; text-shadow: 2px 2px 4px rgba(30, 64, 175, 0.1);">PKR 19,200,000</div>
+                        <p style="font-size: 1.2em; color: #6b7280; margin: 0;">(PKR 1,600,000 × 12 months)</p>
+                    </div>
+
+                    <!-- Contract Terms Grid -->
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 30px;">
+                        
+                        <!-- Duration & Extension Card -->
+                        <div style="background: white; padding: 25px; border-radius: 15px; border: 2px solid #e5e7eb; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);">
+                            <div style="background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 8px 16px; border-radius: 25px; display: inline-block; margin-bottom: 20px; font-weight: 600;">
+                                📅 Duration & Extension
+                            </div>
+                            <div style="space-y: 15px;">
+                                <div style="margin-bottom: 15px;">
+                                    <h5 style="color: #1e40af; font-size: 1.1em; font-weight: 700; margin-bottom: 8px;">Contract Duration:</h5>
+                                    <p style="color: #6b7280; font-size: 1em; margin: 0; line-height: 1.6;">One (1) year from commencement date</p>
+                                </div>
+                                <div>
+                                    <h5 style="color: #1e40af; font-size: 1.1em; font-weight: 700; margin-bottom: 8px;">Extension Policy:</h5>
+                                    <p style="color: #6b7280; font-size: 1em; margin: 0; line-height: 1.6;">May be extended by mutual consent with one (1) month prior written notice</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Billing & Payment Card -->
+                        <div style="background: white; padding: 25px; border-radius: 15px; border: 2px solid #e5e7eb; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);">
+                            <div style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; padding: 8px 16px; border-radius: 25px; display: inline-block; margin-bottom: 20px; font-weight: 600;">
+                                💳 Billing & Payment
+                            </div>
+                            <div style="space-y: 15px;">
+                                <div style="margin-bottom: 15px;">
+                                    <h5 style="color: #1e40af; font-size: 1.1em; font-weight: 700; margin-bottom: 8px;">Billing Cycle:</h5>
+                                    <p style="color: #6b7280; font-size: 1em; margin: 0; line-height: 1.6;">Monthly in advance</p>
+                                </div>
+                                <div style="margin-bottom: 15px;">
+                                    <h5 style="color: #1e40af; font-size: 1.1em; font-weight: 700; margin-bottom: 8px;">Invoice Amount:</h5>
+                                    <p style="color: #6b7280; font-size: 1em; margin: 0; line-height: 1.6;">PKR 1,600,000 per month</p>
+                                </div>
+                                <div>
+                                    <h5 style="color: #1e40af; font-size: 1.1em; font-weight: 700; margin-bottom: 8px;">Payment Due:</h5>
+                                    <p style="color: #6b7280; font-size: 1em; margin: 0; line-height: 1.6;">Must be paid within two (2) weeks of invoice date</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Termination Conditions -->
+                    <div style="background: white; padding: 30px; border-radius: 15px; border: 2px solid #e5e7eb; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);">
+                        <div style="background: linear-gradient(135deg, #ef4444, #dc2626); color: white; padding: 8px 16px; border-radius: 25px; display: inline-block; margin-bottom: 25px; font-weight: 600;">
+                            📋 Termination Conditions
+                        </div>
+                        <p style="color: #1e40af; font-size: 1.1em; font-weight: 700; margin-bottom: 20px;">The contract may be terminated under the following circumstances:</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px;">
+                            <div style="background: #f9fafb; padding: 15px; border-radius: 10px; border-left: 4px solid #10b981;">
+                                <p style="color: #374151; margin: 0; font-size: 0.95em; line-height: 1.6;">✅ By either party with one (1) month prior written notice</p>
+                            </div>
+                            <div style="background: #f9fafb; padding: 15px; border-radius: 10px; border-left: 4px solid #10b981;">
+                                <p style="color: #374151; margin: 0; font-size: 0.95em; line-height: 1.6;">✅ Completion of agreed deliverables</p>
+                            </div>
+                            <div style="background: #f9fafb; padding: 15px; border-radius: 10px; border-left: 4px solid #10b981;">
+                                <p style="color: #374151; margin: 0; font-size: 0.95em; line-height: 1.6;">✅ Mutual agreement to end the engagement early</p>
+                            </div>
+                            <div style="background: #fef2f2; padding: 15px; border-radius: 10px; border-left: 4px solid #ef4444;">
+                                <p style="color: #374151; margin: 0; font-size: 0.95em; line-height: 1.6;">⚠️ Breach of contract (e.g., missed deadlines, non-payment, or failure to maintain data confidentiality)</p>
+                            </div>
+                            <div style="background: #fef2f2; padding: 15px; border-radius: 10px; border-left: 4px solid #ef4444;">
+                                <p style="color: #374151; margin: 0; font-size: 0.95em; line-height: 1.6;">⚠️ Non-performance or persistent inability to deliver expected results</p>
+                            </div>
+                            <div style="background: #fffbeb; padding: 15px; border-radius: 10px; border-left: 4px solid #f59e0b;">
+                                <p style="color: #374151; margin: 0; font-size: 0.95em; line-height: 1.6;">🔄 Change in business priorities or resource/technical limitations that make continuation impractical</p>
+                            </div>
+                            <div style="background: #fffbeb; padding: 15px; border-radius: 10px; border-left: 4px solid #f59e0b;">
+                                <p style="color: #374151; margin: 0; font-size: 0.95em; line-height: 1.6;">🔒 Legal, compliance, or data security issues preventing project execution</p>
+                            </div>
+                            <div style="background: #f3f4f6; padding: 15px; border-radius: 10px; border-left: 4px solid #6b7280;">
+                                <p style="color: #374151; margin: 0; font-size: 0.95em; line-height: 1.6;">🌊 Force majeure events (natural disasters, political instability, or other uncontrollable circumstances)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="why-choose-us" id="why-choose-us">
-                    <h3>🏆 Why Choose Our Team?</h3>
+                <h2 id="why-choose-us">🏆 Why Choose Us: Expert Team & Proven Experience</h2>
                     <div class="choose-us-grid">
                         <div class="choose-us-item">
                             <h4>8+ Years Average Experience</h4>
@@ -1958,6 +1731,180 @@
                             <p>Deep understanding of retail challenges including inventory management, fraud detection, and customer behavior analytics.</p>
                         </div>
                     </div>
+                    
+                    <!-- Recent Banking Engagement Case Study -->
+                    <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; padding: 35px; border-radius: 20px; margin: 30px 0; position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: -50%; right: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%); animation: subtle-rotate 30s linear infinite;"></div>
+                        
+                        <div style="position: relative; z-index: 2;">
+                            <div style="text-align: center; margin-bottom: 30px;">
+                                <div style="background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 10px 25px; border-radius: 30px; display: inline-block; margin-bottom: 20px; font-weight: 700; font-size: 1.1em;">
+                                    🏦 RECENT SUCCESS STORY
+                                </div>
+                                <h4 style="color: white; font-size: 1.8em; font-weight: 800; margin: 0;">Customer Profitability Mechanism</h4>
+                                <p style="color: rgba(255,255,255,0.8); font-size: 1.2em; margin: 10px 0 0 0;">Delivered for One of Pakistan's Largest Banks</p>
+                            </div>
+                            
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 30px;">
+                                <!-- Performance Transformation -->
+                                <div style="background: rgba(255,255,255,0.08); padding: 25px; border-radius: 15px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1);">
+                                    <h5 style="color: #10b981; font-size: 1.3em; font-weight: 700; margin-bottom: 20px; display: flex; align-items: center;">
+                                        🚀 Performance Transformation
+                                    </h5>
+                                    <div style="space-y: 15px;">
+                                        <div style="margin-bottom: 15px;">
+                                            <div style="font-weight: 600; color: white; margin-bottom: 5px;">Processing Time</div>
+                                            <div style="color: rgba(255,255,255,0.9); font-size: 0.95em;">48 hours → <span style="color: #10b981; font-weight: 700;">6 hours</span> (87.5% reduction)</div>
+                                        </div>
+                                        <div style="margin-bottom: 15px;">
+                                            <div style="font-weight: 600; color: white; margin-bottom: 5px;">System Reliability</div>
+                                            <div style="color: rgba(255,255,255,0.9); font-size: 0.95em;">89% → <span style="color: #10b981; font-weight: 700;">99.8%</span> uptime</div>
+                                        </div>
+                                        <div style="margin-bottom: 15px;">
+                                            <div style="font-weight: 600; color: white; margin-bottom: 5px;">Data Accuracy</div>
+                                            <div style="color: rgba(255,255,255,0.9); font-size: 0.95em;">78% → <span style="color: #10b981; font-weight: 700;">99.7%</span></div>
+                                        </div>
+                                        <div>
+                                            <div style="font-weight: 600; color: white; margin-bottom: 5px;">Manual Interventions</div>
+                                            <div style="color: rgba(255,255,255,0.9); font-size: 0.95em;">Reduced by <span style="color: #10b981; font-weight: 700;">92%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Financial Impact -->
+                                <div style="background: rgba(255,255,255,0.08); padding: 25px; border-radius: 15px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1);">
+                                    <h5 style="color: #f59e0b; font-size: 1.3em; font-weight: 700; margin-bottom: 20px; display: flex; align-items: center;">
+                                        💰 Financial Impact
+                                    </h5>
+                                    <div style="space-y: 15px;">
+                                        <div style="margin-bottom: 15px;">
+                                            <div style="font-weight: 600; color: white; margin-bottom: 5px;">Revenue Recovery</div>
+                                            <div style="color: rgba(255,255,255,0.9); font-size: 0.95em;"><span style="color: #f59e0b; font-weight: 700;">$21.6M</span> annually in previously unreported fees</div>
+                                        </div>
+                                        <div style="margin-bottom: 15px;">
+                                            <div style="font-weight: 600; color: white; margin-bottom: 5px;">Cost Savings</div>
+                                            <div style="color: rgba(255,255,255,0.9); font-size: 0.95em;"><span style="color: #f59e0b; font-weight: 700;">$2.3M</span> annually in operational efficiencies</div>
+                                        </div>
+                                        <div style="margin-bottom: 15px;">
+                                            <div style="font-weight: 600; color: white; margin-bottom: 5px;">Total Annual Benefit</div>
+                                            <div style="color: rgba(255,255,255,0.9); font-size: 0.95em;"><span style="color: #f59e0b; font-weight: 700;">$28.9M</span> against $2.1M investment</div>
+                                        </div>
+                                        <div>
+                                            <div style="font-weight: 600; color: white; margin-bottom: 5px;">ROI</div>
+                                            <div style="color: #f59e0b; font-weight: 700; font-size: 1.5em;">1,376%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Strategic Outcomes -->
+                                <div style="background: rgba(255,255,255,0.08); padding: 25px; border-radius: 15px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1);">
+                                    <h5 style="color: #3b82f6; font-size: 1.3em; font-weight: 700; margin-bottom: 20px; display: flex; align-items: center;">
+                                        🎯 Strategic Outcomes
+                                    </h5>
+                                    <div style="space-y: 15px;">
+                                        <div style="margin-bottom: 15px;">
+                                            <div style="font-weight: 600; color: white; margin-bottom: 5px;">High-Value Customers</div>
+                                            <div style="color: rgba(255,255,255,0.9); font-size: 0.95em;"><span style="color: #3b82f6; font-weight: 700;">34%</span> increase (>$10K annual profit)</div>
+                                        </div>
+                                        <div style="margin-bottom: 15px;">
+                                            <div style="font-weight: 600; color: white; margin-bottom: 5px;">Board Reporting</div>
+                                            <div style="color: rgba(255,255,255,0.9); font-size: 0.95em;"><span style="color: #3b82f6; font-weight: 700;">15-day</span> acceleration in monthly reporting</div>
+                                        </div>
+                                        <div style="margin-bottom: 15px;">
+                                            <div style="font-weight: 600; color: white; margin-bottom: 5px;">Regulatory Compliance</div>
+                                            <div style="color: rgba(255,255,255,0.9); font-size: 0.95em;"><span style="color: #3b82f6; font-weight: 700;">100%</span> timeline compliance</div>
+                                        </div>
+                                        <div>
+                                            <div style="font-weight: 600; color: white; margin-bottom: 5px;">Audit Results</div>
+                                            <div style="color: rgba(255,255,255,0.9); font-size: 0.95em;"><span style="color: #3b82f6; font-weight: 700;">Zero</span> audit findings in subsequent examinations</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12-Month Implementation Roadmap -->
+                <div style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); color: #1e40af; padding: 40px; border-radius: 20px; margin: 40px 0; border: 2px solid #e5e7eb; box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);">
+                    <!-- Header Section -->
+                    <div style="margin-bottom: 40px;">
+                        <h2 id="timeline">📅 Implementation Timeline: 12-Month Transformation Roadmap</h2>
+                        <p style="color: #6b7280; font-size: 1.1em; margin-top: 10px;">Structured quarterly progression from discovery to deployment</p>
+                    </div>
+                    
+                    <!-- Timeline with Stair-like Layout -->
+                    <div style="position: relative; max-width: 800px; margin: 0 auto;">
+                        <!-- Central Timeline Line -->
+                        <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 4px; background: linear-gradient(180deg, #3b82f6 0%, #1e40af 100%); border-radius: 2px; transform: translateX(-50%); z-index: 1;"></div>
+                        
+                        <!-- Quarter Steps in Alternating Pattern -->
+                        <div style="display: flex; flex-direction: column; gap: 50px; position: relative; z-index: 2;">
+                            
+                            <!-- Quarter 1 (Left Side) -->
+                            <div style="display: flex; align-items: center; position: relative;">
+                                <div style="flex: 1; padding-right: 40px; text-align: right;">
+                                    <div style="background: white; padding: 25px; border-radius: 15px; border: 2px solid #e5e7eb; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1); position: relative;">
+                                        <div style="position: absolute; right: -12px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 12px solid transparent; border-bottom: 12px solid transparent; border-left: 12px solid white;"></div>
+                                        <h4 style="color: #1e40af; font-size: 1.3em; font-weight: 700; margin-bottom: 12px;">🔍 Data Discovery & System Understanding</h4>
+                                        <p style="color: #6b7280; line-height: 1.5; margin-bottom: 15px;">Complete analysis of your 10 POS systems, data flow mapping, business requirement gathering, and technical architecture planning.</p>
+                                        <div style="background: #f0f9ff; color: #1e40af; padding: 6px 12px; border-radius: 20px; font-size: 0.9em; font-weight: 600; display: inline-block;">📅 Months 1-3</div>
+                                    </div>
+                                </div>
+                                <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.4em; border: 4px solid white; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3); z-index: 3;">Q1</div>
+                                <div style="flex: 1;"></div>
+                            </div>
+                            
+                            <!-- Quarter 2 (Right Side) -->
+                            <div style="display: flex; align-items: center; position: relative;">
+                                <div style="flex: 1;"></div>
+                                <div style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.4em; border: 4px solid white; box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3); z-index: 3;">Q2</div>
+                                <div style="flex: 1; padding-left: 40px; text-align: left;">
+                                    <div style="background: white; padding: 25px; border-radius: 15px; border: 2px solid #e5e7eb; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1); position: relative;">
+                                        <div style="position: absolute; left: -12px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 12px solid transparent; border-bottom: 12px solid transparent; border-right: 12px solid white;"></div>
+                                        <h4 style="color: #1e40af; font-size: 1.3em; font-weight: 700; margin-bottom: 12px;">🔄 ETL & Data Unification</h4>
+                                        <p style="color: #6b7280; line-height: 1.5; margin-bottom: 15px;">Build automated data pipelines, implement data quality frameworks, and create unified data lake architecture consolidating all POS systems.</p>
+                                        <div style="background: #f0f9ff; color: #1e40af; padding: 6px 12px; border-radius: 20px; font-size: 0.9em; font-weight: 600; display: inline-block;">📅 Months 4-6</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Quarter 3 (Left Side) -->
+                            <div style="display: flex; align-items: center; position: relative;">
+                                <div style="flex: 1; padding-right: 40px; text-align: right;">
+                                    <div style="background: white; padding: 25px; border-radius: 15px; border: 2px solid #e5e7eb; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1); position: relative;">
+                                        <div style="position: absolute; right: -12px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 12px solid transparent; border-bottom: 12px solid transparent; border-left: 12px solid white;"></div>
+                                        <h4 style="color: #1e40af; font-size: 1.3em; font-weight: 700; margin-bottom: 12px;">🏗️ Modeling & Data Warehouse</h4>
+                                        <p style="color: #6b7280; line-height: 1.5; margin-bottom: 15px;">Design and implement enterprise data warehouse, create dimensional models, establish data governance policies, and optimize query performance.</p>
+                                        <div style="background: #f0f9ff; color: #1e40af; padding: 6px 12px; border-radius: 20px; font-size: 0.9em; font-weight: 600; display: inline-block;">📅 Months 7-9</div>
+                                    </div>
+                                </div>
+                                <div style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.4em; border: 4px solid white; box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3); z-index: 3;">Q3</div>
+                                <div style="flex: 1;"></div>
+                            </div>
+                            
+                            <!-- Quarter 4 (Right Side) -->
+                            <div style="display: flex; align-items: center; position: relative;">
+                                <div style="flex: 1;"></div>
+                                <div style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); color: white; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.4em; border: 4px solid white; box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3); z-index: 3;">Q4</div>
+                                <div style="flex: 1; padding-left: 40px; text-align: left;">
+                                    <div style="background: white; padding: 25px; border-radius: 15px; border: 2px solid #e5e7eb; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1); position: relative;">
+                                        <div style="position: absolute; left: -12px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 12px solid transparent; border-bottom: 12px solid transparent; border-right: 12px solid white;"></div>
+                                        <h4 style="color: #1e40af; font-size: 1.3em; font-weight: 700; margin-bottom: 12px;">📊🤖 Dashboards & ML Use Cases</h4>
+                                        <p style="color: #6b7280; line-height: 1.5; margin-bottom: 15px;">Deploy interactive dashboards for real-time insights and implement first AI/ML use case for theft detection or demand forecasting.</p>
+                                        <div style="background: #f0f9ff; color: #1e40af; padding: 6px 12px; border-radius: 20px; font-size: 0.9em; font-weight: 600; display: inline-block;">📅 Months 10-12</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Success Summary -->
+                    <div style="text-align: center; margin-top: 50px; padding: 25px; background: white; border-radius: 15px; border: 2px solid #e5e7eb; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);">
+                        <div style="background: linear-gradient(135deg, #3b82f6, #1e40af); color: white; padding: 10px 20px; border-radius: 30px; display: inline-block; margin-bottom: 15px; font-weight: 600;">🎯 TRANSFORMATION COMPLETE</div>
+                        <h4 style="color: #1e40af; margin: 0 0 10px 0; font-size: 1.4em; font-weight: 700;">End-to-End Solution in 12 Months</h4>
+                        <p style="color: #6b7280; margin: 0; font-size: 1.1em;">From scattered data to actionable AI-powered insights that drive business growth</p>
+                    </div>
                 </div>
 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
@@ -1983,61 +1930,14 @@
             </div>
         </div>
 
-        <!-- Implementation Timeline Page -->
+        <!-- Expected Outcomes & Value Delivery Section -->
         <div class="page">
-            <div class="section" id="timeline">
-                <h2>🪜 What's Next?</h2>
-                
-                <div class="ladder-section">
-                    <h3 style="color: #1e40af; text-align: center; margin-bottom: 40px;">🚀 Your Journey From Pain Points to Solutions</h3>
-                    
-                    <div class="ladder-container">
-                        <div class="ladder-steps">
-                            <div class="ladder-step">
-                                <div class="ladder-step-content">
-                                    <div class="ladder-step-number">1</div>
-                                    <div class="ladder-step-title">🏗️ Infrastructure Selection</div>
-                                    <div class="ladder-step-description">Choose your preferred architecture (Cloud/On-premise/Hybrid) based on your business requirements and budget constraints. We'll guide you through the best option for your growth.</div>
-                                </div>
-                            </div>
-                            
-                            <div class="ladder-step">
-                                <div class="ladder-step-content">
-                                    <div class="ladder-step-number">2</div>
-                                    <div class="ladder-step-title">💰 Budget Confirmation</div>
-                                    <div class="ladder-step-description">Finalize investment structure and resource allocation. Lock in the $8,000 monthly package with all mentioned resources and start your transformation journey.</div>
-                                </div>
-                            </div>
-                            
-                            <div class="ladder-step">
-                                <div class="ladder-step-content">
-                                    <div class="ladder-step-number">3</div>
-                                    <div class="ladder-step-title">📋 Team Assignment & Scope</div>
-                                    <div class="ladder-step-description">Meet your dedicated team, receive comprehensive scope of work, and establish clear responsibilities, timelines, and success metrics for your project.</div>
-                                </div>
-                            </div>
-                            
-                            <div class="ladder-step">
-                                <div class="ladder-step-content">
-                                    <div class="ladder-step-number">4</div>
-                                    <div class="ladder-step-title">🚀 Implementation & Execution</div>
-                                    <div class="ladder-step-description">Deploy your dedicated team, begin data integration from all 10 POS systems, set up automated pipelines, and implement AI models for theft detection and forecasting.</div>
-                                </div>
-                            </div>
-                            
-                            <div class="ladder-step">
-                                <div class="ladder-step-content">
-                                    <div class="ladder-step-number">5</div>
-                                    <div class="ladder-step-title">🎯 Pain Relief & Value Delivery</div>
-                                    <div class="ladder-step-description">Achieve complete automation, real-time insights, theft detection, inventory optimization, and measurable business growth. Experience the transformation!</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="section" style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); padding: 40px; border-radius: 20px; margin: 40px 0; border: 2px solid #e5e7eb; box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);">
+                <!-- Section Header -->
+                <div style="margin-bottom: 40px;">
+                    <h2 id="outcomes">🎯 Expected Outcomes: Measurable Results & Business Impact</h2>
+                    <p style="color: #6b7280; font-size: 1.1em; margin-top: 10px;">Quantified outcomes that will transform your retail operations</p>
                 </div>
-
-                <h3 id="outcomes">🎯 Expected Outcomes & Value Delivery</h3>
-                
                 <div class="outcome-cards">
                     <div class="outcome-card">
                         <h4>📊 Data Unification</h4>
@@ -2092,7 +1992,6 @@
                         <div class="metric">15%</div>
                         <p>Revenue boost through real-time price adjustments based on demand and competitor analysis</p>
                     </div>
-                    
                     <div class="outcome-card">
                         <h4>💳 Customer Loyalty Engine</h4>
                         <div class="metric">40%</div>
@@ -2118,11 +2017,65 @@
             </div>
         </div>
 
+        <!-- What's Next Section -->
+        <div class="page">
+            <div class="section" style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); padding: 40px; border-radius: 20px; margin: 40px 0; border: 2px solid #e5e7eb; box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);">
+                <!-- Section Header -->
+                <div style="margin-bottom: 40px;">
+                    <h2 id="what-next">🪜 What's Next: Your Journey From Pain Points to Solutions</h2>
+                    <p style="color: #6b7280; font-size: 1.1em; margin-top: 10px;">Step-by-step pathway to your digital transformation</p>
+                </div>
+                            <div class="ladder-container">
+                                <div class="ladder-steps">
+                                    <div class="ladder-step">
+                                        <div class="ladder-step-content">
+                                            <div class="ladder-step-number">1</div>
+                                            <div class="ladder-step-title">🏗️ Infrastructure Selection</div>
+                                            <div class="ladder-step-description">Choose your preferred architecture (Cloud/On-premise/Hybrid) based on your business requirements and budget constraints. We'll guide you through the best option for your growth.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ladder-step">
+                                        <div class="ladder-step-content">
+                                            <div class="ladder-step-number">2</div>
+                                            <div class="ladder-step-title">💰 Budget Confirmation</div>
+                                            <div class="ladder-step-description">Finalize investment structure and resource allocation. Lock in the PKR 1,600,000 monthly package with all mentioned resources and start your transformation journey.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ladder-step">
+                                        <div class="ladder-step-content">
+                                            <div class="ladder-step-number">3</div>
+                                            <div class="ladder-step-title">📋 Team Assignment & Scope</div>
+                                            <div class="ladder-step-description">Meet your dedicated team, receive comprehensive scope of work, and establish clear responsibilities, timelines, and success metrics for your project.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ladder-step">
+                                        <div class="ladder-step-content">
+                                            <div class="ladder-step-number">4</div>
+                                            <div class="ladder-step-title">🚀 Implementation & Execution</div>
+                                            <div class="ladder-step-description">Deploy your dedicated team, begin data integration from all 10 POS systems, set up automated pipelines, and implement AI models for theft detection and forecasting.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ladder-step">
+                                        <div class="ladder-step-content">
+                                            <div class="ladder-step-number">5</div>
+                                            <div class="ladder-step-title">🎯 Pain Relief & Value Delivery</div>
+                                            <div class="ladder-step-description">Achieve complete automation, real-time insights, theft detection, inventory optimization, and measurable business growth. Experience the transformation!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
         <!-- Call to Action -->
         <div class="page">
             <div class="cta-section" id="contact">
                 <div class="cta-content">
-                    <h2 style="color: white; margin-bottom: 25px;">🤝 Let's Become Partners in Your Data-Driven Success</h2>
+                    <h2 id="contact">🤝 Contact Us: Let's Become Partners in Your Data-Driven Success</h2>
                     <p style="font-size: 1.3em; margin-bottom: 30px;">Ready to transform your retail business with data-driven insights? Let's partner together to achieve considerable growth, eliminate losses, and maximize efficiency through advanced analytics and AI.</p>
                     
                     <div class="contact-grid">
@@ -2138,10 +2091,10 @@
                         </div>
                     </div>
                     
-                    <div style="background: rgba(255,255,255,0.15); padding: 25px; border-radius: 15px; margin-top: 35px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+                    <div style="background: rgba(255,255,255,0.15); padding: 25px 25px 0; border-radius: 15px; margin-top: 35px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
                         <h4 style="color: white; margin-bottom: 15px;">⏰ Ready to Start Your Transformation?</h4>
                         <p style="margin-bottom: 15px; font-size: 1.1em;"><strong>This proposal is valid until October 16, 2025</strong></p>
-                        <p style="font-size: 1.05em; opacity: 0.95;">Let's schedule our partnership discussion and start building your competitive advantage in the retail market. Together, we'll turn your data into your greatest business asset!</p>
+                        <p style="font-size: 1.05em; opacity: 0.95; margin-bottom: 0; padding-bottom: 25px;">Let's schedule our partnership discussion and start building your competitive advantage in the retail market. Together, we'll turn your data into your greatest business asset!</p>
                     </div>
                 </div>
             </div>
